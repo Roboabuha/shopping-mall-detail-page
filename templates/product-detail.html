@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 상세페이지 | 쇼핑몰 상세페이지 템플릿</title>
+  <link rel="stylesheet" href="../assets/css/product-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">🛍️ ShopMall</div>
+      <nav class="nav">
+        <a href="#">홈</a>
+        <a href="#">카테고리</a>
+        <a href="#">이벤트</a>
+        <a href="#">고객센터</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn"><i class="fas fa-search"></i></button>
+        <button class="icon-btn"><i class="fas fa-shopping-cart"></i><span class="badge">3</span></button>
+        <button class="icon-btn"><i class="fas fa-user"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb container">
+    <a href="#">홈</a> &gt; <a href="#">패션의류</a> &gt; <a href="#">상의</a> &gt; <span>프리미엄 티셔츠</span>
+  </div>
+
+  <!-- Main Product Section -->
+  <main class="product-main container">
+    <!-- Gallery -->
+    <section class="product-gallery">
+      <div class="main-image">
+        <img id="mainImg" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80" alt="상품 메인 이미지">
+        <div class="badge-sale">SALE 30%</div>
+      </div>
+      <div class="thumbnail-list">
+        <img class="thumb active" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&q=80" alt="썸네일 1" onclick="changeImage(this)">
+        <img class="thumb" src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=200&q=80" alt="썸네일 2" onclick="changeImage(this)">
+        <img class="thumb" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=200&q=80" alt="썸네일 3" onclick="changeImage(this)">
+        <img class="thumb" src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&q=80" alt="썸네일 4" onclick="changeImage(this)">
+      </div>
+    </section>
+
+    <!-- Product Info -->
+    <section class="product-info">
+      <div class="brand">Premium Brand</div>
+      <h1 class="product-title">오버핏 프리미엄 코튼 티셔츠 - 소프트 터치 시그니처 컬렉션</h1>
+      
+      <div class="rating">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <span class="rating-score">4.7</span>
+        <span class="review-count">(1,284개 리뷰)</span>
+      </div>
+
+      <div class="price-box">
+        <div class="original-price">59,000원</div>
+        <div class="sale-price">
+          <span class="discount">30%</span>
+          <span class="final-price">41,300원</span>
+        </div>
+        <div class="shipping-info">
+          <i class="fas fa-truck"></i> 오늘출발 · 내일 도착 보장
+        </div>
+      </div>
+
+      <!-- Options -->
+      <div class="options">
+        <div class="option-group">
+          <label>색상</label>
+          <div class="color-options">
+            <button class="color-btn active" style="background:#1a1a1a" title="블랙"></button>
+            <button class="color-btn" style="background:#ffffff; border:1px solid #ddd" title="화이트"></button>
+            <button class="color-btn" style="background:#2c5aa0" title="네이비"></button>
+            <button class="color-btn" style="background:#8b4513" title="브라운"></button>
+          </div>
+        </div>
+        <div class="option-group">
+          <label>사이즈</label>
+          <div class="size-options">
+            <button class="size-btn">S</button>
+            <button class="size-btn active">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+            <button class="size-btn disabled">XXL</button>
+          </div>
+        </div>
+        <div class="option-group quantity">
+          <label>수량</label>
+          <div class="qty-control">
+            <button onclick="changeQty(-1)">−</button>
+            <input type="number" id="qty" value="1" min="1" max="99">
+            <button onclick="changeQty(1)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+        <button class="btn-cart">장바구니</button>
+        <button class="btn-buy">바로구매</button>
+      </div>
+
+      <!-- Benefits -->
+      <div class="benefits">
+        <div class="benefit-item"><i class="fas fa-undo"></i> 7일 무료 반품</div>
+        <div class="benefit-item"><i class="fas fa-shield-alt"></i> 정품 보증</div>
+        <div class="benefit-item"><i class="fas fa-gift"></i> 포장 서비스</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Tabs -->
+  <div class="product-tabs container">
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="detail">상품상세</button>
+      <button class="tab-btn" data-tab="spec">스펙정보</button>
+      <button class="tab-btn" data-tab="review">리뷰 (1,284)</button>
+      <button class="tab-btn" data-tab="qna">Q&A</button>
+    </div>
+
+    <div class="tab-content active" id="detail">
+      <div class="detail-content">
+        <h2>상품 설명</h2>
+        <p>부드러운 터치감과 완벽한 오버핏 실루엣을 자랑하는 프리미엄 코튼 티셔츠입니다. 100% 코마 코튼 원단으로 제작되어 세탁 후에도 형태 유지력이 뛰어나며, 피부에 자극이 없어 데일리 웨어로 최적입니다.</p>
+        
+        <div class="detail-images">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900&q=80" alt="상세 이미지 1">
+          <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=900&q=80" alt="상세 이미지 2">
+        </div>
+
+        <h3>추천 포인트</h3>
+        <ul>
+          <li>✔️ 고급 코마 코튼 100% 사용</li>
+          <li>✔️ 오버핏 실루엣으로 트렌디한 룩 완성</li>
+          <li>✔️ 4계절 착용 가능한 중간 두께</li>
+          <li>✔️ 세탁 후 수축 최소화 처리</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-content" id="spec">
+      <table class="spec-table">
+        <tr><th>상품명</th><td>오버핏 프리미엄 코튼 티셔츠</td></tr>
+        <tr><th>브랜드</th><td>Premium Brand</td></tr>
+        <tr><th>소재</th><td>코튼 100%</td></tr>
+        <tr><th>사이즈</th><td>S / M / L / XL</td></tr>
+        <tr><th>색상</th><td>블랙, 화이트, 네이비, 브라운</td></tr>
+        <tr><th>제조국</th><td>대한민국</td></tr>
+        <tr><th>세탁방법</th><td>찬물 단독 세탁 권장</td></tr>
+        <tr><th>A/S</th><td>구매일로부터 1년</td></tr>
+      </table>
+    </div>
+
+    <div class="tab-content" id="review">
+      <div class="review-summary">
+        <div class="avg-score">4.7</div>
+        <div class="stars big">★★★★★</div>
+        <p>1,284개의 리뷰</p>
+      </div>
+      <div class="review-list">
+        <div class="review-item">
+          <div class="review-header">
+            <span class="user">김**님</span>
+            <span class="stars">★★★★★</span>
+            <span class="date">2026.08.10</span>
+          </div>
+          <p>핏이 정말 예쁘고 원단이 부드러워요. 추천합니다!</p>
+        </div>
+        <div class="review-item">
+          <div class="review-header">
+            <span class="user">이**님</span>
+            <span class="stars">★★★★☆</span>
+            <span class="date">2026.08.05</span>
+          </div>
+          <p>사이즈 가이드대로 입으니 딱 맞아요. 배송도 빨랐습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="qna">
+      <div class="qna-item">
+        <div class="q"><strong>Q.</strong> 세탁 시 이염 되나요?</div>
+        <div class="a"><strong>A.</strong> 첫 세탁 시 단독 세탁을 권장드리며, 이염 방지 처리가 되어 있습니다.</div>
+      </div>
+      <div class="qna-item">
+        <div class="q"><strong>Q.</strong> 모델 키와 착용 사이즈가 궁금해요.</div>
+        <div class="a"><strong>A.</strong> 모델 키 180cm / 착용 사이즈 L 입니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 ShopMall. All rights reserved. | 쇼핑몰 상세페이지 제작 프로젝트</p>
+      <p class="footer-note">이 템플릿은 학습 및 제작 참고용입니다.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/product-detail.js"></script>
+</body>
+</html>
