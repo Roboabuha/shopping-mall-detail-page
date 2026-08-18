@@ -1,0 +1,24 @@
+{
+  "name": "shopping-mall-detail-page",
+  "version": "1.0.0",
+  "description": "쇼핑몰 상세페이지 제작을 위한 템플릿 및 컴포넌트 프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve templates -p 3000",
+    "preview": "python3 -m http.server 8000 --directory templates",
+    "dev": "npx live-server templates --port=3000"
+  },
+  "keywords": [
+    "ecommerce",
+    "product-detail",
+    "shopping-mall",
+    "template",
+    "korean-shopping"
+  ],
+  "author": "Roboabuha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roboabuha/shopping-mall-detail-page.git"
+  }
+}
