@@ -1,0 +1,54 @@
+{
+  "id": "prod-001",
+  "brand": "Premium Brand",
+  "title": "오버핏 프리미엄 코튼 티셔츠 - 소프트 터치 시그니처 컬렉션",
+  "category": ["패션의류", "상의"],
+  "price": {
+    "original": 59000,
+    "sale": 41300,
+    "discountRate": 30
+  },
+  "rating": {
+    "score": 4.7,
+    "count": 1284
+  },
+  "images": {
+    "main": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80",
+    "thumbnails": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&q=80",
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=200&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=200&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=200&q=80"
+    ],
+    "detail": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900&q=80",
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=900&q=80"
+    ]
+  },
+  "options": {
+    "colors": [
+      { "name": "블랙", "code": "#1a1a1a" },
+      { "name": "화이트", "code": "#ffffff" },
+      { "name": "네이비", "code": "#2c5aa0" },
+      { "name": "브라운", "code": "#8b4513" }
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  "specs": {
+    "소재": "코튼 100%",
+    "사이즈": "S / M / L / XL",
+    "색상": "블랙, 화이트, 네이비, 브라운",
+    "제조국": "대한민국",
+    "세탁방법": "찬물 단독 세탁 권장",
+    "A/S": "구매일로부터 1년"
+  },
+  "description": "부드러운 터치감과 완벽한 오버핏 실루엣을 자랑하는 프리미엄 코튼 티셔츠입니다.",
+  "points": [
+    "고급 코마 코튼 100% 사용",
+    "오버핏 실루엣으로 트렌디한 룩 완성",
+    "4계절 착용 가능한 중간 두께",
+    "세탁 후 수축 최소화 처리"
+  ],
+  "shipping": "오늘출발 · 내일 도착 보장",
+  "benefits": ["7일 무료 반품", "정품 보증", "포장 서비스"]
+}
